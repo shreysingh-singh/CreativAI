@@ -1,4 +1,5 @@
 
+import AiTools from '../components/AiTools'
 import HeroSection from '../components/HeroSection'
 import NavBar from '../components/NavBar'
 
@@ -7,6 +8,7 @@ function Home() {
     <>
       <NavBar />
       <HeroSection />
+      <AiTools />
     </>
   )
 }
