@@ -13,7 +13,7 @@ import BlogTittles from "./pages/blogTittles";
 
 function App() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Routes>
         {/* Home */}
         <Route path="/" element={<Home />} />
