@@ -7,7 +7,7 @@ function Footer() {
         <div className="md:max-w-96">
           <img src={assets.logo} className="w-39.25 h-auto" alt="" />
           <p className="mt-6 text-sm">
-            Experience the power of AI with QuickAi. Transform your content
+            Experience the power of AI with CreativAI. Transform your content
             creation with our suite of premium AI tools. Write articles,
             generate images, and enhance your workflow.
           </p>
@@ -54,7 +54,7 @@ function Footer() {
         </div>
       </div>
       <p className="pt-4 text-center text-xs md:text-sm pb-5">
-        Copyright 2024 © <a href="https://prebuiltui.com">PrebuiltUI</a>. All
+        Copyright 2024 © <a href="https://prebuiltui.com">CreativAI</a>. All
         Right Reserved.
       </p>
     </footer>
