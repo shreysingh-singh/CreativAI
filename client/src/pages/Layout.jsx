@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import SideBar from "../components/SideBar";
-import { useUser, SignIn, useClerk} from '@clerk/react'
+import { useUser, SignIn} from '@clerk/react'
 
 function Layout() {
 
@@ -36,9 +36,14 @@ function Layout() {
     </div>
   ) : (
     <div className="flex items-center justify-center h-screen">
+      {/* <img
+        src={user?.imageUrl}
+        alt={user?.firstName || "User"}
+        className="w-10 h-10 rounded-full object-cover"
+      /> */}
       <SignIn />
     </div>
-  )
+  );
 }
 
 export default Layout;
