@@ -19,26 +19,34 @@ function App() {
         {/* Home Page */}
         <Route path="/" element={<Home />} />
 
-        {/* AI Dashboard */}
-        <Route path="/ai" element={<Layout />} />
+        {/* AI Dashboard Layout */}
+        <Route path="/ai" element={<Layout />}>
+          {/* /ai */}
+          <Route path="dashboard" index element={<Dashboard />} />
 
-        {/* AI Tools */}
-        <Route path="/ai/dashboard" element={<Dashboard />} />
+          {/* /ai/write-article */}
+          <Route path="write-article" element={<WriteAreticle />} />
 
-        <Route path="/ai/write-article" element={<WriteAreticle />} />
+          {/* /ai/blog-titles */}
+          <Route path="blog-titles" element={<BlogTittles />} />
 
-        <Route path="/ai/blog-titles" element={<BlogTittles />} />
+          {/* /ai/generate-images */}
+          <Route path="generate-images" element={<GenerateImages />} />
 
-        <Route path="/ai/generate-images" element={<GenerateImages />} />
+          {/* /ai/remove-background */}
+          <Route path="remove-background" element={<RemoveBackground />} />
 
-        <Route path="/ai/remove-background" element={<RemoveBackground />} />
+          {/* /ai/remove-object */}
+          <Route path="remove-object" element={<RemoveObject />} />
 
-        <Route path="/ai/remove-object" element={<RemoveObject />} />
+          {/* /ai/review-resume */}
+          <Route path="review-resume" element={<ReviewResume />} />
 
-        <Route path="/ai/review-resume" element={<ReviewResume />} />
-
-        <Route path="/ai/community" element={<Community />} />
+          {/* /ai/community */}
+          <Route path="community" element={<Community />} />
+        </Route>
       </Routes>
+
       <Footer />
     </>
   );
