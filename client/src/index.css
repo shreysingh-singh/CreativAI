@@ -16,6 +16,9 @@ html {
 .geist-font {
   font-family: "Geist", sans-serif;
 }
+.reset-tw, .reset-tw *{
+  all: revert !important
+}
 
 
 /* ================================
