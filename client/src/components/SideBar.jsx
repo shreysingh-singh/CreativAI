@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import {
   LayoutDashboard,
   PenLine,
+  Hash,
   Image,
   Eraser,
   ScanSearch,
@@ -26,6 +27,11 @@ function SideBar({ sideBar, setSideBar }) {
       name: "Write Article",
       path: "/ai/write-article",
       icon: PenLine,
+    },
+    {
+      name: "Write Blog",
+      path: "/ai/blog-titles",
+      icon: Hash,
     },
     {
       name: "Generate Images",
@@ -74,28 +80,27 @@ function SideBar({ sideBar, setSideBar }) {
       {/* Sidebar */}
       <aside
         className={`
-    w-64
-    shrink-0
-    bg-white
-    border-r border-gray-200
-    flex flex-col
+          w-64
+          shrink-0
+          bg-white
+          border-r border-gray-200
+          flex flex-col
 
-    max-sm:absolute
-    max-sm:top-0
-    max-sm:left-0
-    max-sm:h-full
-    max-sm:z-40
+          max-sm:absolute
+          max-sm:top-0
+          max-sm:left-0
+          max-sm:h-full
+          max-sm:z-40
 
-    transition-transform
-    duration-300
-    ease-[cubic-bezier(0.22,1,0.36,1)]
+          transition-transform
+          duration-300
+          ease-[cubic-bezier(0.22,1,0.36,1)]
 
-    ${sideBar ? "translate-x-0" : "max-sm:-translate-x-full"}
-  `}
+          ${sideBar ? "translate-x-0" : "max-sm:-translate-x-full"}
+        `}
       >
-        {/* Logo / Header */}
+        {/* Header */}
         <div className="h-16 px-5 flex items-center justify-between border-b border-gray-100">
-          {/* Mobile Close */}
           <button
             onClick={() => setSideBar(false)}
             className="sm:hidden p-2 rounded-lg hover:bg-gray-100 transition"
@@ -205,7 +210,6 @@ function SideBar({ sideBar, setSideBar }) {
             "
           >
             <LogOut className="w-5 h-5" />
-
             <span>Logout</span>
           </button>
         </div>
